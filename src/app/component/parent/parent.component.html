@@ -1,0 +1,9 @@
+<p>parent works!</p> 
+
+<button (click)="toggleChild()">Button</button>
+
+<input type="text" [(ngModel)]="channelName"/>
+
+<app-child *ngIf="isChild" [channelName]="channelName"></app-child>
+
+<h3 #projectedContent>hello..</h3>
